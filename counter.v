@@ -3,10 +3,10 @@ module counter ( input [15:0] in,
             output reg [15:0] out);
 
   initial begin
-    out = 15'h0001;
+    out = 16'h0001;
   end
     
   always @ (posedge clk)
-      out = !rst && enable ? in : 32'h0001;
+      out = !rst && enable ? in : 16'h0001;
 
 endmodule
